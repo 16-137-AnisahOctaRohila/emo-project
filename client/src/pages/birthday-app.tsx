@@ -367,6 +367,18 @@ export default function BirthdayApp() {
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-500 mb-6 sm:mb-3">Harapan IP di sem 5 🤓☝️</h2>
                 <p className="text-gray-600 text-xs sm:text-sm px-4">walau kurikulum baru maju semua dan aneh bet</p>
                 <p className="text-gray-600 text-xs sm:text-sm px-4 mb-4">tetap harus semangat berkuliah (ngak ya?)</p>
+                
+                <div className="mb-6 flex justify-center">
+                  <button
+                    onClick={() => {
+                      const newGrades = grades.map(subject => ({ ...subject, grade: "A" }));
+                      setGrades(newGrades);
+                    }}
+                    className="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-yellow-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-yellow-300"
+                  >
+                    ✨ klik ini agar ip auto A! ✨
+                  </button>
+                </div>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse border border-blue-200 rounded-lg">
                     <thead>
