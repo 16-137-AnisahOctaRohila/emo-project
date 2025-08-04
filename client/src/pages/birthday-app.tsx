@@ -450,7 +450,7 @@ export default function BirthdayApp() {
                         <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/5">
                           SKS
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/5">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-2/5">
                           Index
                         </th>
                       </tr>
