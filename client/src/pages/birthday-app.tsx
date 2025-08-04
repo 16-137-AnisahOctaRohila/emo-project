@@ -376,7 +376,7 @@ export default function BirthdayApp() {
                     }}
                     className="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-yellow-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-yellow-300"
                   >
-                    klik ini agar ip auto A! 🥶
+                    klik ini agar ip auto A 🥶
                   </button>
                 </div>
                 <div className="overflow-x-auto">
