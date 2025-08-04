@@ -420,10 +420,7 @@ export default function BirthdayApp() {
                   Harapan IP di sem 5 🤓☝️
                 </h2>
                 <p className="text-gray-600 text-xs sm:text-sm px-4">
-                  walau kurikulum baru maju semua dan aneh bet
-                </p>
-                <p className="text-gray-600 text-xs sm:text-sm px-4 mb-4">
-                  tetap harus semangat berkuliah (ngak ya?)
+                  walau kurikulum baru maju semua dan aneh bet tetap harus semangat berkuliah (ngak ya?)
                 </p>
 
                 <div className="mb-6 flex justify-center">
@@ -444,13 +441,13 @@ export default function BirthdayApp() {
                   <table className="w-full border-collapse border border-blue-200 rounded-lg">
                     <thead>
                       <tr className="bg-blue-50">
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-3/5">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-1/2">
                           Matkul pusink
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/5">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/4">
                           SKS
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-2/5">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/4">
                           Index
                         </th>
                       </tr>
@@ -471,7 +468,7 @@ export default function BirthdayApp() {
                                 handleGradeChange(index, value)
                               }
                             >
-                              <SelectTrigger className="w-10 sm:w-12 text-sm">
+                              <SelectTrigger className="w-14 sm:w-16 text-sm mx-auto">
                                 <SelectValue placeholder="-" />
                               </SelectTrigger>
                               <SelectContent>
