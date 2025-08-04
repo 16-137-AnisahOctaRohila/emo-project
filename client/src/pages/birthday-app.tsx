@@ -444,10 +444,10 @@ export default function BirthdayApp() {
                         <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-1/2">
                           Matkul pusink
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/5">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/3">
                           SKS
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/3">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/6">
                           Index
                         </th>
                       </tr>
