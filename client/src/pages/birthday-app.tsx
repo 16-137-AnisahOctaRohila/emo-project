@@ -28,7 +28,7 @@ const subjects = [
   { name: "Desain Interaksi", sks: 2 },
   { name: "MPTI", sks: 3 },
   { name: "Karier, Etika, dan KWU (ini apadeh?)", sks: 2 },
-  { name: "Dan matkul lain yg kamu ambil nanti😯", sks: 100 },
+  { name: "Dan matkul lain yg kamu ambil nanti😯", sks: 1000 },
 ];
 
 const gradeOptions = ["A", "AB", "B", "BC", "C", "D", "E"];
