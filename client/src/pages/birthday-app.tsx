@@ -441,13 +441,13 @@ export default function BirthdayApp() {
                   <table className="w-full border-collapse border border-blue-200 rounded-lg">
                     <thead>
                       <tr className="bg-blue-50">
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-1/2">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-2/5">
                           Matkul pusink
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/4">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/6">
                           SKS
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/4">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-5/12">
                           Index
                         </th>
                       </tr>
@@ -461,24 +461,26 @@ export default function BirthdayApp() {
                           <td className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base">
                             {subject.sks}
                           </td>
-                          <td className="border border-blue-200 p-1 sm:p-2 text-center">
-                            <Select
-                              value={subject.grade}
-                              onValueChange={(value) =>
-                                handleGradeChange(index, value)
-                              }
-                            >
-                              <SelectTrigger className="w-14 sm:w-16 text-sm mx-auto">
-                                <SelectValue placeholder="-" />
-                              </SelectTrigger>
-                              <SelectContent>
-                                {gradeOptions.map((grade) => (
-                                  <SelectItem key={grade} value={grade}>
-                                    {grade}
-                                  </SelectItem>
-                                ))}
-                              </SelectContent>
-                            </Select>
+                          <td className="border border-blue-200 p-2 sm:p-3 text-center">
+                            <div className="flex justify-center">
+                              <Select
+                                value={subject.grade}
+                                onValueChange={(value) =>
+                                  handleGradeChange(index, value)
+                                }
+                              >
+                                <SelectTrigger className="w-24 sm:w-28 text-sm text-center">
+                                  <SelectValue placeholder="-" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  {gradeOptions.map((grade) => (
+                                    <SelectItem key={grade} value={grade} className="text-center justify-center">
+                                      {grade}
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
+                            </div>
                           </td>
                         </tr>
                       ))}
