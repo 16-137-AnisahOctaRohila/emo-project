@@ -362,25 +362,25 @@ export default function BirthdayApp() {
                 <p className="text-gray-600 text-xs sm:text-sm px-4">walau kurikulum baru maju semua dan aneh bet</p>
                 <p className="text-gray-600 text-xs sm:text-sm px-4 mb-4">tetap harus semangat berkuliah (ngak ya?)</p>
                 <div className="overflow-x-auto">
-                  <table className="w-full border-collapse border-2 border-blue-200 rounded-lg">
+                  <table className="w-full border-collapse border border-blue-200 rounded-lg">
                     <thead>
                       <tr className="bg-blue-50">
-                        <th className="border border-blue-200 p-2 sm:p-3 text-center text-sm sm:text-base">Matkul pusink</th>
-                        <th className="border border-blue-200 p-2 sm:p-3 text-center text-sm sm:text-base">SKS</th>
-                        <th className="border border-blue-200 p-2 sm:p-3 text-center text-sm sm:text-base">Index</th>
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs sm:text-sm">Matkul pusink</th>
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs sm:text-sm">SKS</th>
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs sm:text-sm">Index</th>
                       </tr>
                     </thead>
                     <tbody>
                       {grades.map((subject, index) => (
                         <tr key={index}>
-                          <td className="border border-blue-200 p-2 sm:p-3 text-sm sm:text-base">{subject.name}</td>
-                          <td className="border border-blue-200 p-2 sm:p-3 text-center text-sm sm:text-base">{subject.sks}</td>
-                          <td className="border border-blue-200 p-2 sm:p-3 text-center">
+                          <td className="border border-blue-200 p-1 sm:p-2 text-xs sm:text-sm">{subject.name}</td>
+                          <td className="border border-blue-200 p-1 sm:p-2 text-center text-xs sm:text-sm">{subject.sks}</td>
+                          <td className="border border-blue-200 p-1 sm:p-2 text-center">
                             <Select
                               value={subject.grade}
                               onValueChange={(value) => handleGradeChange(index, value)}
                             >
-                              <SelectTrigger className="w-12 sm:w-16 text-sm">
+                              <SelectTrigger className="w-10 sm:w-12 text-xs">
                                 <SelectValue placeholder="-" />
                               </SelectTrigger>
                               <SelectContent>
