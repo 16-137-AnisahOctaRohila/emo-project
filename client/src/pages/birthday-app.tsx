@@ -147,12 +147,12 @@ export default function BirthdayApp() {
     <div className={`min-h-screen flex items-center justify-center p-4 ${backgroundClass}`}>
       {showConfetti && <Confetti />}
       {showLetterConfetti && <ColorfulConfetti />}
-
+      
       <audio ref={audioRef} preload="auto">
-        <source src="/assets/hbd.mp3" type="audio/mpeg" />
+        <source src="/src/assets/hbd.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-
+      
       <AnimatePresence mode="wait">
         {currentPage === 'quiz' && (
           <motion.div
@@ -181,7 +181,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/assets/wrong-answer.png" 
+                    src="/src/assets/wrong-answer.png" 
                     alt="Wrong answer" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -213,7 +213,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/assets/correct-answer.png" 
+                    src="/src/assets/correct-answer.png" 
                     alt="Correct answer" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -262,27 +262,27 @@ export default function BirthdayApp() {
             <Card className="w-full max-w-2xl mx-auto">
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="bg-yellow-50 p-4 sm:p-8 rounded-2xl shadow-inner border-2 border-yellow-200">
-                  <h1 className="text-3xl sm:text-5xl font-bold text-blue-500 mb-4 sm:mb-6">Happy Birthday Cikallll</h1>
-
-                  <div className="text-left text-gray-700 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
+                  <h1 className="text-xl sm:text-2xl font-bold text-blue-500 mb-4 sm:mb-6">Happy Birthday Cikallll 🥳</h1>
+                  
+                  <div className="text-left text-gray-700 leading-relaxed mb-6 sm:mb-8 text-xs">
                     <p className="mb-3 sm:mb-4">
-                      Wowwwww halo cikal, as usual apa kabarr? Semoga kabarmu baik ya, sehat2 deh. Kmu tau kan hari ini hari apa 🤔 yuppyuppp selamat ulang tahun ke 20 tahun kall, udah kepala 2 ya ternyata, sudah panjang juga perjalanan hidup kamu tapi perjalanan selanjutnya juga masih panjangggg banget, dan di setiap jalan itu aku harap smoga kmu diiringin ama orang2 yang baik, bahagia terus, dan makin banyak hal2 baik terjadi di hidupmu.
+                      Wowwwww hai cikal, as usual apa kabarr? Apkh kmu tau ini hariapa?! 🤔 yuppyuppp selamat ulang tahun ke 20 tahun kall, udah kepala 2 ya ternyata, sudah panjang juga perjalanan hidup kamu tapi perjalanan selanjutnya juga masih panjangggg banget dan di setiap jalan itu aku harap smoga kmu diiringin ama orang2 yang baik ya #anjay
                     </p>
-
+                    
                     <p className="mb-3 sm:mb-4">
-                      Harapannya apa ya? Wkwkwk, kita ga sedeket itusi jadi gatau kamu pengen apa, tapi semoga hari-hari mu makin membaik, apapun itu yang terjadi di perkuliahan juga makin meningkat baik itu akademik maupun non akademik, doa terbaik juga untuk keluargamu dan orang-orang yang penting buat kamu. Pokoknya i just wish you all the best and happiness.
+                      Harapannya apa ya? Wkwkwk, kita ga sedeket itusi jadi gatau, tapi semoga hari-hari mu berjalan baik, apapun itu yang terjadi di perkuliahan juga makin meningkat, doa terbaik juga untuk keluargamu dan orang-orang yang penting buat kamu. Pokoknya i just wish you all the best and happiness.
                     </p>
-
+                    
                     <p>
-                      Sekali lagi selamat ulang tahun ke-20 cikalll. Aku juga gatau kenapa buat ini heheh tapi iseng saja banh. Semoga yang kamu semogakan tersemogakan, happy birthday! :3
+                      Jujur gw gajago membuat hal2 kaya gini soalnya iseng. Tapi semoga yang kamu semogakan tersemogakan! once again happy birthday! :3
                     </p>
                   </div>
-
+                  
                   <div className="text-right">
-                    <p className="text-pink-500 font-bold text-sm sm:text-base">TTD Anisah Octa_IF'23 🥳</p>
+                    <p className="text-pink-500 font-bold text-sm sm:text-base">TTD Anisah Octa_IF'23</p>
                   </div>
                 </div>
-
+                
                 <Button 
                   onClick={() => setCurrentPage('fairy')}
                   className="mt-4 sm:mt-6 bg-blue-500 hover:bg-blue-400 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-full text-sm sm:text-base"
@@ -308,7 +308,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/assets/fairy.png" 
+                    src="/src/assets/fairy.png" 
                     alt="Fairy Anisa" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -320,7 +320,7 @@ export default function BirthdayApp() {
                   Sekarang kamu bertemu dengan ibu peri Anisa Octa 😏
                 </h2>
                 <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">What is this brooo #BukanMusyrikYyhh</p>
-
+                
                 <form onSubmit={handleWishSubmit} className="space-y-4">
                   <Textarea 
                     placeholder="Tuliskan permintaanmu di sini yh kal"
@@ -397,7 +397,7 @@ export default function BirthdayApp() {
                     </tbody>
                   </table>
                 </div>
-
+                
                 <Button 
                   onClick={handleGradeSubmit}
                   disabled={gradeMutation.isPending}
@@ -437,13 +437,13 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="flex justify-center mb-4">
                   <img 
-                    src="/assets/drink-water.gif" 
+                    src="/src/assets/drink-water.gif" 
                     alt="Drink water" 
                     className="w-40 h-40 object-contain"
                   />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-blue-500 mb-3 sm:mb-2">Jangan lupa minum air putih 🤗🥛</h2>
-
+        
                 <div className="mt-6 sm:mt-3 text-gray-600">
                   <p className="text-sm sm:text-base">adios 🙂‍↔️</p>
                 </div>
@@ -470,16 +470,16 @@ export default function BirthdayApp() {
             >
               <div className="w-48 h-48 sm:w-64 sm:h-64 mx-auto mb-4 sm:mb-6 flex items-center justify-center">
                 <img 
-                  src="/assets/hengker.png" 
+                  src="/src/assets/hengker.png" 
                   alt="Calon hacker" 
                   className="w-44 h-44 sm:w-60 sm:h-60 object-cover"
                 />
               </div>
-
+              
               <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 px-2">
                 Good job calon hengker internasional 😏 makasih udah ngisi index, semoga IP mu sem ini menaik yaa, berapapun ituu
               </p>
-
+              
               <Button 
                 onClick={() => {
                   setShowHackerPopup(false);
