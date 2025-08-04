@@ -441,13 +441,13 @@ export default function BirthdayApp() {
                   <table className="w-full border-collapse border border-blue-200 rounded-lg">
                     <thead>
                       <tr className="bg-blue-50">
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-[45%]">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-xs w-1/2">
                           Matkul pusink
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-[20%]">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-1/5">
                           SKS
                         </th>
-                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-[35%]">
+                        <th className="border border-blue-200 p-1 sm:p-2 text-center text-sm sm:text-base w-[30%]">
                           Index
                         </th>
                       </tr>
