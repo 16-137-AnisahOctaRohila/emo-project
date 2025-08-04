@@ -365,8 +365,7 @@ export default function BirthdayApp() {
             <Card className="w-full max-w-4xl mx-auto">
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-500 mb-6 sm:mb-3">Harapan IP di sem 5 🤓☝️</h2>
-                <p className="text-gray-600 text-xs sm:text-sm px-4">walau kurikulum baru maju semua dan aneh bet</p>
-                <p className="text-gray-600 text-xs sm:text-sm px-4 mb-4">tetap harus semangat berkuliah (ngak ya?)</p>
+                <p className="text-gray-600 text-xs sm:text-sm px-4">walau kurikulum baru maju semua dan aneh bet tetap harus semangat berkuliah (ngak ya?)</p>
                 
                 <div className="mb-6 flex justify-center">
                   <button
