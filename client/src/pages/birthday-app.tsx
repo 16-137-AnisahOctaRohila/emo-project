@@ -177,7 +177,13 @@ export default function BirthdayApp() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <Card className="w-full max-w-md mx-auto border-red-200">
+            <Card className="w-full max-w-md mx-auto border-red-200 relative">
+              <button
+                onClick={handleTryAgain}
+                className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-red-100 hover:bg-red-200 text-red-600 text-lg font-bold z-10"
+              >
+                ×
+              </button>
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
@@ -466,8 +472,17 @@ export default function BirthdayApp() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-white rounded-3xl shadow-2xl p-8 max-w-md mx-auto text-center"
+              className="bg-white rounded-3xl shadow-2xl p-8 max-w-md mx-auto text-center relative"
             >
+              <button
+                onClick={() => {
+                  setShowHackerPopup(false);
+                  setCurrentPage('cake');
+                }}
+                className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 text-lg font-bold"
+              >
+                ×
+              </button>
               <div className="w-48 h-48 sm:w-64 sm:h-64 mx-auto mb-4 sm:mb-6 flex items-center justify-center">
                 <img 
                   src="/assets/hengker.png" 
