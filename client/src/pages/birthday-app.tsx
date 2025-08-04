@@ -147,12 +147,12 @@ export default function BirthdayApp() {
     <div className={`min-h-screen flex items-center justify-center p-4 ${backgroundClass}`}>
       {showConfetti && <Confetti />}
       {showLetterConfetti && <ColorfulConfetti />}
-      
+
       <audio ref={audioRef} preload="auto">
-        <source src="/src/assets/hbd.mp3" type="audio/mpeg" />
+        <source src="/assets/hbd.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      
+
       <AnimatePresence mode="wait">
         {currentPage === 'quiz' && (
           <motion.div
@@ -181,7 +181,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/src/assets/wrong-answer.png" 
+                    src="/assets/wrong-answer.png" 
                     alt="Wrong answer" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -213,7 +213,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/src/assets/correct-answer.png" 
+                    src="/assets/correct-answer.png" 
                     alt="Correct answer" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -308,7 +308,7 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-4 flex items-center justify-center">
                   <img 
-                    src="/src/assets/fairy.png" 
+                    src="/assets/fairy.png" 
                     alt="Fairy Anisa" 
                     className="w-36 h-36 sm:w-44 sm:h-44 object-cover"
                   />
@@ -320,7 +320,7 @@ export default function BirthdayApp() {
                   Sekarang kamu bertemu dengan ibu peri Anisa Octa 😏
                 </h2>
                 <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">What is this brooo #BukanMusyrikYyhh</p>
-                
+
                 <form onSubmit={handleWishSubmit} className="space-y-4">
                   <Textarea 
                     placeholder="Tuliskan permintaanmu di sini yh kal"
@@ -397,7 +397,7 @@ export default function BirthdayApp() {
                     </tbody>
                   </table>
                 </div>
-                
+
                 <Button 
                   onClick={handleGradeSubmit}
                   disabled={gradeMutation.isPending}
@@ -437,13 +437,13 @@ export default function BirthdayApp() {
               <CardContent className="pt-4 px-4 sm:pt-6 sm:px-6">
                 <div className="flex justify-center mb-4">
                   <img 
-                    src="/src/assets/drink-water.gif" 
+                    src="/assets/drink-water.gif" 
                     alt="Drink water" 
                     className="w-40 h-40 object-contain"
                   />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-blue-500 mb-3 sm:mb-2">Jangan lupa minum air putih 🤗🥛</h2>
-        
+
                 <div className="mt-6 sm:mt-3 text-gray-600">
                   <p className="text-sm sm:text-base">adios 🙂‍↔️</p>
                 </div>
@@ -470,16 +470,16 @@ export default function BirthdayApp() {
             >
               <div className="w-48 h-48 sm:w-64 sm:h-64 mx-auto mb-4 sm:mb-6 flex items-center justify-center">
                 <img 
-                  src="/src/assets/hengker.png" 
+                  src="/assets/hengker.png" 
                   alt="Calon hacker" 
                   className="w-44 h-44 sm:w-60 sm:h-60 object-cover"
                 />
               </div>
-              
+
               <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 px-2">
                 Good job calon hengker internasional 😏 makasih udah ngisi index, semoga IP mu sem ini menaik yaa, berapapun ituu
               </p>
-              
+
               <Button 
                 onClick={() => {
                   setShowHackerPopup(false);
